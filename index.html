@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renova - sua marca de moda sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+
+    <header class="header">
+    
+        <a href="index.html" class="logo"> <img class="logo" src="imagens/logo-r.png" alt=""></a>
+    
+        <nav class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="blog.html">Blog</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    
+        <div class="icons">
+    
+            <div class="fas fa-bars" id="menu-btn"></div>
+    
+            <div class="fas fa-search" id="search-btn"></div>
+    
+            <div class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-count" style="display: none;">0</span>
+            </div>
+    
+            <a href="contato.html"><div class="fas fa-user" id="user-btn"></div></a>
+    
+        </div>
+    
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Pesquisar">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+
+    <main>
+
+        <section>
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="imagens/Sua marca de moda sustentável.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/Moda feminina.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/Moda masculina.png" alt="">
+                    </div>
+                </div>
+                <div class="arrow left" onclick="prevSlide()">❮</div>
+                <div class="arrow right" onclick="nextSlide()">❯</div>
+                <div class="dots">
+                    <div class="dot" onclick="currentSlide(0)"></div>
+                    <div class="dot" onclick="currentSlide(1)"></div>
+                    <div class="dot" onclick="currentSlide(2)"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="product1" class="section-p1">
+
+            <h2 style="font-size: 3rem; margin-bottom: -40px;">Nossos benefícios</h2>
+
+        </section>
+
+        <section>
+
+            <section id="service" class="section-p1">
+
+                <div class="se-box">
+                    <img src="imagens/service-1.png" alt="">
+                    <h5>Frete grátis!</h5>
+                </div>
+                <div class="se-box">
+                    <img src="imagens/service-2.png" alt="">
+                    <h5>Pagamento ágil!</h5>
+                </div>
+                <div class="se-box">
+                    <img src="imagens/service-3.png" alt="">
+                    <h5>Devolução garantida!</h5>
+                </div>
+                <div class="se-box">
+                    <img src="imagens/service-4.png" alt="">
+                    <h5>Atendimento online!</h5>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section id="product1" class="section-p1">
+        
+            <h2>Produtos em destaque</h2>
+            <p style="margin-bottom: 20px;">Descubra os nossos produtos mais vendidos</p>
+        
+            <div class="pro-container">
+        
+                <div class="pro" >
+                    <img src="imagens/produto1.jpg" onclick="window.location.href='sp1.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Calça jeans elétrica vermelha</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$109,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="1"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                
+                </div>
+        
+                <div class="pro" >
+                    <img src="imagens/produto2.jpg" onclick="window.location.href='sp2.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Calça jeans elétrica azul</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$109,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="2"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto3.jpg" onclick="window.location.href='sp3.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Jaqueta multi-color</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$89,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="3"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto4.jpg" onclick="window.location.href='sp4.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Camiseta old cartoom</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$59,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="4"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto5.jpg" onclick="window.location.href='sp5.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Moletom de lã arcanjos</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$130,00</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="5"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto6.jpg" onclick="window.location.href='sp6.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Moletom flores</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$119,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="6"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto7.jpg" onclick="window.location.href='sp7.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Shorts underground</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$69,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="7"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto8.jpg" onclick="window.location.href='sp8.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Moletom joaninha</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$109,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="8"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+                
+            </div>
+        </section>
+    
+        </section>
+
+        <section id="banner" class="section-m1">
+
+            <h4>Promoções!</h4>
+            <h2>Até <span>70% off</span> Em calças e camisetas </h2>
+            <a href="produtos.html"><button class="normal">Confira!</button></a>
+        </section>
+
+        <section id="product1" class="section-p1">
+        
+            <h2>Novas tendências</h2>
+            <p style="margin-bottom: 20px;">Conheça as últimas tendências da moda</p>
+        
+            <div class="pro-container">
+        
+                <div class="pro">
+                    <img src="imagens/produto9.jpg" onclick="window.location.href='sp9.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Calça de couro camuflada</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$159,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="9"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto10.jpg"  onclick="window.location.href='sp10.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Calça jeans primavera</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$189,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="10"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto11.jpg"  onclick="window.location.href='sp11.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Jaqueta de couro coração do deserto</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$189,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="11"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto12.jpg" onclick="window.location.href='sp12.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Calça cargo olhares</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$129,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="12"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto13.jpg" onclick="window.location.href='sp13.html';" alt="">
+                    <div class="des">
+                        <span>Quicksilver</span>
+                        <h5>Camiseta Gasparzinho vida loka</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$70,00</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="13"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto14.jpg" onclick="window.location.href='sp14.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Camisa azul ghostmane</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$69,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="14"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto15.jpg" onclick="window.location.href='sp15.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Camiseta Hull City</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$69,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="15"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+                <div class="pro">
+                    <img src="imagens/produto16.jpg" onclick="window.location.href='sp16.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Camiseta Adidas Spain Collection</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$59,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="16"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+                </div>
+        
+            </div>
+        
+        </section>
+
+        <section id="sm-banner" class="section-p1">
+
+            <div class="banner-box">
+
+                 <h4 >Ofertas imperdíveis!</h4>
+                 <h2>Compre 1 leve 2</h2>
+                 <span>As melhores camisetas costumizadas do mercado</span>
+                 <a href="produtos.html"><button class="white">Confira!</button></a>
+
+            </div>
+
+            <div class="banner-box banner-box2">
+
+                 <h4>tendências do verão</h4>
+                 <h2>Benefícios da pré-venda</h2>
+                 <span>Os melhores looks para o verão</span>
+                 <a href="produtos.html"><button class="white">Coleções</button></a>
+
+            </div>
+
+        </section>
+
+        <section id="banner3">
+
+            <div class="banner-box">
+            
+                <h3>Confira nossas promoções</h3>
+                <h3>Coleções de inverno até 50% off!</h3>
+            
+            </div>
+
+            <div class="banner-box banner-box1">
+            
+                <h3>Novas Coleções</h3>
+                <h3>Não perca as novidades de 2024!</h3>
+            
+            </div>
+
+            <div class="banner-box banner-box4">
+            
+                <h3>Moda para todos</h3>
+                <h3>looks para todos os gostos e estilos!</h3>
+            
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <button class="close-btn">×</button>
+            <h2>Seu Carrinho &nbsp; <i class="fas fa-shopping-bag"></i></h2>
+            <div class="cart-content"></div>
+            <p id="empty-cart-message" style="display: none;">Seu carrinho está vazio.</p>
+            <br>
+            <hr>
+            <div class="total-price" id="total-value">Valor total: R$ 0,00</div>
+    
+            <a href="carrinho.html"><button class="checkout-btn">Finalizar Compra</button></a>
+        </div>
+    </div>
+
+    <footer class="section-p1">
+
+        <div class="col">
+
+            <img class="logo" src="imagens/logo.png" alt="">
+            <h4>Contato</h4>
+            <p><strong>Endereço: </strong>562 Wellington Road, Street 32, San Francisco, CA 94114</p>
+            <p><strong>Celular: </strong>+1 234 567 890</p>
+            <p><strong>Horários: </strong>09:00am - 05:00pm, Segunda a Sexta-feira</p>
+
+            <div class="redes">
+                <h4>Siga-nos em nossas redes sociais</h4>
+                <div class="icons">
+                    <a href="https://m.facebook.com/100088887640479/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.co/gsIjBjAl3n"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/customwearhouse"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h4>Informações</h4>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        
+        <div class="col">
+            <h4>Minha conta</h4>
+            <a href="carrinho.html">Meu carrinho</a>
+            <a href="contato.html">Login</a>
+        </div>
+
+        <div class="col install">
+            <h4>Métodos de pagamento 100% seguros</h4>
+            <img src="imagens/pagamento.webp" alt="">
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 Custom Wearhouse. Todos os direitos reservados.</p>
+            <p>S.I.A - Soluções Inteligentes para o Amanhã - TCC IOS</p>
+        </div>
+
+    </footer>
+
+
+    <Script src="script.js"></Script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="slider.js"></script>
+    
+</body>
+
+</html>

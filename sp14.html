@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renova - sua marca de moda sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <img class="logo" src="imagens/logo-r.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a class="active" href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="blog.html">Blog</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <div class="icons">
+
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+            <div class="fas fa-search" id="search-btn"></div>
+
+            <div class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-count" style="display: none;">0</span>
+            </div>
+
+            <a href="contato.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Pesquisar">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <main>
+
+       <section id="prodetails" class="section-p1">
+
+        <div class="single-pro-image">
+            <img style="width: 100%;" src="imagens/produto14.jpg" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img style="width: 100%;" src="imagens/produto14.jpg"  alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img style="width: 100%;" src="imagens/produto14.jpg" alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img style="width: 100%;" src="imagens/produto14.jpg"  alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img style="width: 100%;" src="imagens/produto14.jpg" alt="" class="small-img">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="single-pro-details">
+
+            <h5>Home / camisas</h5>
+            <h3>Camisa azul ghostmane</h3>
+            <h2>R$69,99</h2>
+
+            <div class="star-detail">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <select>
+                <option>Selecionar tamanho</option>
+                <option>GG</option>
+                <option>G</option>
+                <option>M</option>
+                <option>P</option>
+            </select>
+
+            <button class="normal" id="add-to-cart-button" data-product-id="1">Adicionar ao carrinho</button>
+
+
+            <h4>Detalhes do produto:</h4>
+            <span>
+                A camisa azul "Ghostemane" é uma peça que reflete o estilo único e ousado do artista. Com um design moderno e detalhes
+                que remetem à sua estética, ela se destaca em qualquer look. Ideal para fãs de música e cultura urbana, combina bem com
+                jeans ou calças cargo. Feita com materiais de qualidade, oferece conforto e durabilidade para o uso diário. É uma
+                escolha perfeita para quem quer expressar sua identidade de maneira autêntica e estilosa.
+            </span>
+
+        </div>
+
+       </section>
+
+    <section id="product1" class="section-p1">
+    
+        <h2>Produtos semelhantes</h2>
+        <p style="margin-bottom: 20px;">Conheça mais opções para o seu gosto</p>
+    
+        <div class="pro-container">
+    
+            <div class="pro">
+                <img src="imagens/produto19.jpg" onclick="window.location.href='sp19.html';" alt="">
+                <div class="des">
+                    <span>Microsoft</span>
+                    <h5>Jaqueta teclado branco</h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>R$109,99</h4>
+                </div>
+                <a class="add-to-cart" data-product-id="3"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="imagens/produto7.jpg" onclick="window.location.href='sp7.html';" alt="">
+                <div class="des">
+                    <span>custom</span>
+                    <h5>Shorts underground</h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>R$69,99</h4>
+                </div>
+                <a class="add-to-cart" data-product-id="7"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="imagens/produto17.jpg" onclick="window.location.href='sp17.html';" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Camisa atlético mineiro</h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>R$49,99</h4>
+                </div>
+                <a class="add-to-cart" data-product-id="1"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="imagens/produto15.jpg" onclick="window.location.href='sp15.html';" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Camiseta Hull City</h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>R$69,99</h4>
+                </div>
+                <a class="add-to-cart" data-product-id="15"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+
+    </section>
+
+    </main>
+
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <button class="close-btn">×</button>
+            <h2>Seu Carrinho &nbsp; <i class="fas fa-shopping-bag"></i></h2>
+            <div class="cart-content"></div>
+            <p id="empty-cart-message" style="display: none;">Seu carrinho está vazio.</p>
+            <br>
+            <hr>
+            <div class="total-price" id="total-value">Valor total: R$ 0,00</div>
+
+            <a href="carrinho.html"><button class="checkout-btn">Finalizar Compra</button></a>
+        </div>
+    </div>
+
+    <footer class="section-p1">
+
+        <div class="col">
+
+            <img class="logo" src="imagens/logo.png" alt="">
+            <h4>Contato</h4>
+            <p><strong>Endereço: </strong>562 Wellington Road, Street 32, San Francisco, CA 94114</p>
+            <p><strong>Celular: </strong>+1 234 567 890</p>
+            <p><strong>Horários: </strong>09:00am - 05:00pm, Segunda a Sexta-feira</p>
+
+            <div class="redes">
+                <h4>Siga-nos em nossas redes sociais</h4>
+                <div class="icons">
+                    <a href="https://m.facebook.com/100088887640479/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.co/gsIjBjAl3n"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/customwearhouse"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h4>Informações</h4>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha conta</h4>
+            <a href="carrinho.html">Meu carrinho</a>
+            <a href="contato.html">Login</a>
+        </div>
+
+        <div class="col install">
+            <h4>Métodos de pagamento 100% seguros</h4>
+            <img src="imagens/pagamento.webp" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Custom Wearhouse. Todos os direitos reservados.</p>
+            <p>S.I.A - Soluções Inteligentes para o Amanhã - TCC IOS</p>
+        </div>
+
+    </footer>
+
+    <script>
+
+        var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            for (var i = 0; i < smallimg.length; i++) {
+                smallimg[i].onclick = function () {
+                    MainImg.src = this.src; // 'this' se refere à imagem que foi clicada
+                }
+            }
+
+    </script>
+
+    <Script src="script.js"></Script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="slider.js"></script>
+
+</body>
+
+</html>

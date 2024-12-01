@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renova - sua marca de moda sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <img class="logo" src="imagens/logo-r.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a class="active" href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="blog.html">Blog</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <div class="icons">
+
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+            <div class="fas fa-search" id="search-btn"></div>
+
+            <div class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-count" style="display: none;">0</span>
+            </div>
+
+            <a href="contato.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Pesquisar">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="imagens/slidehome.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/Moda feminina.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/Moda masculina.png" alt="">
+                    </div>
+                    <!-- <div class="carousel-item">
+                                <img src="imagens/slide 4.png" alt="">
+                            </div> -->
+                </div>
+                <div class="arrow left" onclick="prevSlide()">❮</div>
+                <div class="arrow right" onclick="nextSlide()">❯</div>
+                <div class="dots">
+                    <div class="dot" onclick="currentSlide(0)"></div>
+                    <div class="dot" onclick="currentSlide(1)"></div>
+                    <div class="dot" onclick="currentSlide(2)"></div>
+                    <div class="dot" onclick="currentSlide(3)"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="banner1" class="section-m1">
+        
+            <h4>Promoções!</h4>
+            <h2>Até <span>20% off</span> Em looks masculinos </h2>
+            <a href="produtos.html"><button class="normal">Confira!</button></a>
+            
+        </section>
+
+        <section id="product1" class="section-p1">
+
+            <h2>Moda masculina</h2>
+            <p style="margin-bottom: 20px;">As melhores peças de moda masculina</p>
+
+            <div class="pro-container">
+
+                <div class="pro">
+                    <img src="imagens/produto17.jpg" onclick="window.location.href='sp17.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Camisa atlético mineiro</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$49,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="1"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto18.jpg" onclick="window.location.href='sp18.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Camisa Al-hilal</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$49,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="2"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto19.jpg" onclick="window.location.href='sp19.html';" alt="">
+                    <div class="des">
+                        <span>Microsoft</span>
+                        <h5>Jaqueta teclado branco</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$109,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="3"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto20.jpg" onclick="window.location.href='sp20.html';" alt="">
+                    <div class="des">
+                        <span>Microsoft</span>
+                        <h5>Jaqueta teclado preto</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$109,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="4"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto21.jpg"  onclick="window.location.href='sp21.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Calça jeans mosaico azul</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$139,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="5"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto22.jpg" onclick="window.location.href='sp22.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Shorts jeans preto</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$79,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="6"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto23.jpg" onclick="window.location.href='sp23.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Camiseta polo Harley Davidson</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$129,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="7"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto24.jpg" onclick="window.location.href='sp24.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Camiseta xadrez pokemon Eve</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$129,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="8"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id="banner2" class="section-m1">
+        
+            <h4>Promoções!</h4>
+            <h2>Até <span>20% off</span> Em looks femininos </h2>
+            <a href="produtos.html"><button class="normal">Confira!</button></a>
+
+        </section>
+
+        <section id="product1" class="section-p1">
+
+            <h2>Moda Feminina</h2>
+            <p style="margin-bottom: 20px;">Looks femininos para arrasar </p>
+
+            <div class="pro-container">
+
+                <div class="pro">
+                    <img src="imagens/produto25.jpg"  onclick="window.location.href='sp25.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Sweater pokemon Electabuzz</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$149,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="9"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto26.jpg" onclick="window.location.href='sp26.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Shortinho Barbie gótica</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$59,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="10"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto27.jpg" onclick="window.location.href='sp27.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Camiseta Barbie </h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$89,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="11"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto28.jpg" onclick="window.location.href='sp28.html';" alt="">
+                    <div class="des">
+                        <span>custom</span>
+                        <h5>Moletom Barbie</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$129,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="12"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto29.jpg" onclick="window.location.href='sp29.html';" alt="">
+                    <div class="des">
+                        <span>Quicksilver</span>
+                        <h5>Maiô jeans borboleta</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$79,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="13"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto30.jpg" onclick="window.location.href='sp30.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Calça psicodélica rosa</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$169,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="14"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto31.jpg" onclick="window.location.href='sp31.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Moletom napolitano</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$169,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="15"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="imagens/produto32.jpg" onclick="window.location.href='sp32.html';" alt="">
+                    <div class="des">
+                        <span>Adidas</span>
+                        <h5>Calça jeans flores rosa shock</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$99,99</h4>
+                    </div>
+                    <a class="add-to-cart" data-product-id="16"><i class="fa fa-shopping-cart cart"
+                            aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <button class="close-btn">×</button>
+            <h2>Seu Carrinho &nbsp; <i class="fas fa-shopping-bag"></i></h2>
+            <div class="cart-content"></div>
+            <p id="empty-cart-message" style="display: none;">Seu carrinho está vazio.</p>
+            <br>
+            <hr>
+            <div class="total-price" id="total-value">Valor total: R$ 0,00</div>
+
+            <a href="carrinho.html"><button class="checkout-btn">Finalizar Compra</button></a>
+        </div>
+    </div>
+
+    <footer class="section-p1">
+
+        <div class="col">
+
+            <img class="logo" src="imagens/logo.png" alt="">
+            <h4>Contato</h4>
+            <p><strong>Endereço: </strong>562 Wellington Road, Street 32, San Francisco, CA 94114</p>
+            <p><strong>Celular: </strong>+1 234 567 890</p>
+            <p><strong>Horários: </strong>09:00am - 05:00pm, Segunda a Sexta-feira</p>
+
+            <div class="redes">
+                <h4>Siga-nos em nossas redes sociais</h4>
+                <div class="icons">
+                    <a href="https://m.facebook.com/100088887640479/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.co/gsIjBjAl3n"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/customwearhouse"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h4>Informações</h4>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha conta</h4>
+            <a href="carrinho.html">Meu carrinho</a>
+            <a href="contato.html">Login</a>
+        </div>
+
+        <div class="col install">
+            <h4>Métodos de pagamento 100% seguros</h4>
+            <img src="imagens/pagamento.webp" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Custom Wearhouse. Todos os direitos reservados.</p>
+            <p>S.I.A - Soluções Inteligentes para o Amanhã - TCC IOS</p>
+        </div>
+
+    </footer>
+
+
+    <Script src="script.js"></Script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="slider.js"></script>
+
+</body>
+
+</html>

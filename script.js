@@ -213,6 +213,22 @@ const produtos = [
     { id: 14, nome: 'Camisa azul ghostmane', descricao: 'Camisa azul ghostmane', preco: 'R$69,99' },
     { id: 15, nome: 'Camiseta Hull City', descricao: 'Camiseta Hull City', preco: 'R$69,99' },
     { id: 16, nome: 'Camiseta Adidas Spain Collection', descricao: 'Camiseta Adidas Spain Collection', preco: 'R$59,99' },
+    { id: 17, nome: 'Camisa atlético mineiro', descricao: 'Camisa atlético mineiro', preco: 'R$49,99' },
+    { id: 18, nome: 'Camisa Al-hilal', descricao: 'Camisa Al-hilal', preco: 'R$49,99' },
+    { id: 19, nome: 'Jaqueta teclado branco', descricao: 'Jaqueta teclado branco', preco: 'R$109,99' },
+    { id: 20, nome: 'Jaqueta teclado preto', descricao: 'Jaqueta teclado preto', preco: 'R$109,99' },
+    { id: 21, nome: 'Calça jeans mosaico azul', descricao: 'Calça jeans mosaico azul', preco: 'R$139,99' },
+    { id: 22, nome: 'Shorts jeans preto', descricao: 'Shorts jeans preto', preco: 'R$79,99' },
+    { id: 23, nome: 'Camiseta polo Harley Davidson', descricao: 'Camiseta polo Harley Davidson', preco: 'R$129,99' },
+    { id: 24, nome: 'Camiseta xadrez pokemon Eve', descricao: 'Camiseta xadrez pokemon Eve', preco: 'R$129,99' },
+    { id: 25, nome: 'Sweater pokemon Electabuzz', descricao: 'Sweater pokemon Electabuzz', preco: 'R$149,99' },
+    { id: 26, nome: 'Shortinho Barbie gótica', descricao: 'Shortinho Barbie gótica', preco: 'R$59,99' },
+    { id: 27, nome: 'Camiseta Barbie', descricao: 'Camiseta Barbie', preco: 'R$89,99' },
+    { id: 28, nome: 'Moletom Barbie', descricao: 'Moletom Barbie', preco: 'R$129,99' },
+    { id: 29, nome: 'Maiô jeans borboleta', descricao: 'Maiô jeans borboleta', preco: 'R$79,99' },
+    { id: 30, nome: 'Calça psicodélica rosa', descricao: 'Calça psicodélica rosa', preco: 'R$169,99' },
+    { id: 31, nome: 'Moletom napolitano', descricao: 'Moletom napolitano', preco: 'R$129,99' },
+    { id: 32, nome: 'Calça jeans flores rosa shock', descricao: 'Calça jeans flores rosa shock', preco: 'R$99,99' },
 ];
 
 function buscarProdutos() {
@@ -288,36 +304,33 @@ document.getElementById('search-box').addEventListener('input', buscarProdutos);
 
 //////////////////integração entre o carrinho e checkout//////////////////
 
-// Função para adicionar produtos ao carrinho
 function addToCart(product) {
     const cartItems = JSON.parse(localStorage.getItem("produtosCarrinho")) || [];
 
     const existingItem = cartItems.find(item => item.title === product.title);
     if (existingItem) {
-        existingItem.quantity += 1; // Aumenta a quantidade se já existir
+        existingItem.quantity += 1;
     } else {
-        cartItems.push(product); // Adiciona novo produto
+        cartItems.push(product);
     }
 
     localStorage.setItem("produtosCarrinho", JSON.stringify(cartItems));
-    console.log("Produtos no carrinho:", cartItems); // Verifique se os produtos estão sendo adicionados
+    console.log("Produtos no carrinho:", cartItems);
 }
 
-// Adiciona evento de clique aos botões "Adicionar ao Carrinho"
 document.querySelectorAll(".add-to-cart").forEach(button => {
     button.addEventListener("click", (event) => {
-        const productElement = event.target.closest(".pro"); // Seleciona o produto
-        const title = productElement.querySelector("h5").innerText; // Nome do produto
-        const priceText = productElement.querySelector("h4").innerText; // Preço do produto
-        const price = parseFloat(priceText.replace('R$', '').replace(',', '.').trim()); // Converte para número
-        const imgSrc = productElement.querySelector("img").src; // Imagem do produto
+        const productElement = event.target.closest(".pro");
+        const title = productElement.querySelector("h5").innerText;
+        const priceText = productElement.querySelector("h4").innerText;
+        const price = parseFloat(priceText.replace('R$', '').replace(',', '.').trim());
+        const imgSrc = productElement.querySelector("img").src;
 
         const product = { title, price, imgSrc, quantity: 1 };
         addToCart(product);
     });
 });
 
-// Função para carregar os produtos do localStorage e exibi-los na página carrinho.html
 function loadCartItems() {
     const cartItems = JSON.parse(localStorage.getItem("produtosCarrinho")) || [];
     const cartContent = document.querySelector(".cart-item-box");
@@ -370,20 +383,6 @@ function handlePayment() {
 }
 
 document.querySelector(".btn.btn-primary").addEventListener("click", handlePayment);
-
-///////////scripts login//////////////
-
-const container = document.querySelector('.container-login');
-const registerBtn = document.querySelector('.register-btn');
-const loginBtn = document.querySelector('.login-btn');
-
-registerBtn.addEventListener('click', () => {
-    container.classList.add('active');
-})
-
-loginBtn.addEventListener('click', () => {
-    container.classList.remove('active');
-})
 
 ///////////scripts single product//////////////
 

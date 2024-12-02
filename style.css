@@ -1979,7 +1979,7 @@ img {
 
 }
 
-@media (max-width:400px){
+@media (max-width:400px) {
 
     .card-icon {
         display: flex;
@@ -1994,6 +1994,106 @@ img {
         align-items: center;
         border: 3px solid hsl(313, 83%, 49%);
         box-shadow: 0 0 10px rgba(255, 14, 235, 0.5);
+    }
+
+}
+
+.slider-blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.slider-blog img {
+    width: 90%;
+    border-radius: 15px;
+    border: 3px solid hsl(313, 83%, 49%);
+    box-shadow: 0 0 30px rgba(255, 14, 235, 0.8);
+}
+
+.blog-post {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(196, 176, 176, 0.2);
+    max-width: 900px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+}
+
+.post-img img {
+    width: 92%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.post-content {
+    padding: 10px;
+    width: 60%;
+    padding: 10px;
+}
+
+.blog-content-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.post-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(160, 152, 152, 0.8);
+    margin: 0 auto;
+    max-width: 18%;
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+}
+
+.post-img-2 img {
+    width: 100%;
+    height: 25rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+
+    .blog-content-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .post-box {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(160, 152, 152, 0.8);
+        margin: 0 auto;
+        max-width: 75%;
+        border-radius: 10px;
+        padding: 10px;
+        height: 400px;
+    }
+
+    .blog-post {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        width: 80%;
+        margin: 0 auto;
     }
 
 }

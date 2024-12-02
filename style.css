@@ -1950,6 +1950,10 @@ img {
         height: 30vh;
     }
 
+    .mvv-content{
+        margin: 0 auto;
+    }
+
     .cards-mvv {
         display: flex;
         flex-direction: column;
@@ -1959,15 +1963,16 @@ img {
         border-radius: 10px;
         padding: 15px;
         box-shadow: 0 0 10px rgba(255, 14, 235, 0.5);
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+        margin-top: 60px;
     }
 
     .card-icon {
         display: flex;
         justify-content: center;
-        margin-top: -50px;
+        margin-top: -70px;
         position: relative;
-        margin-left: 70px;
+        margin-left: 80px;
         background-color: #fff;
         border-radius: 50%;
         width: 40%;
@@ -2094,6 +2099,14 @@ img {
         overflow: scroll;
         width: 80%;
         margin: 0 auto;
+    }
+
+    .post-content h1{
+        font-size: 1.8rem;
+    }
+
+    .post-content p{
+        font-size: 1.3rem;
     }
 
 }

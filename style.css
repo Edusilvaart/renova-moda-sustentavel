@@ -2193,3 +2193,21 @@ img {
     }
 
 }
+
+@media (max-width: 500px) {
+    
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+
+}
